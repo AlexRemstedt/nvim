@@ -34,4 +34,17 @@ return {
     "rcarriga/nvim-dap-ui",
     enabled = false,
   },
+  {
+    "theHamsta/nvim-dap-virtual-text",
+    enabled = true,
+    keys = {
+      {
+        "<leader>dv",
+        function()
+          require("nvim-dap-virtual-text").toggle()
+        end,
+        desc = "Toggle DAP virtual text",
+      },
+    },
+  },
 }
