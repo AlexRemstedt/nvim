@@ -4,3 +4,4 @@
 vim.g.snacks_animate = false
 vim.opt.showtabline = 0
 vim.opt.splitkeep = "cursor"
+vim.opt.wrap = true
