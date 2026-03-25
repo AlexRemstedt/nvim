@@ -9,4 +9,7 @@ vim.opt.wrap = true
 -- Molten Nvim options
 vim.g.python3_host_prog = vim.fn.expand("~/.local/share/virtualenvs/neovim/bin/python3")
 vim.g.molten_virt_text_output = true
-vim.g.molten_auto_open_output = false
+vim.g.molten_virt_lines_off_by_1 = true
+vim.g.molten_auto_open_output = true
+vim.g.molten_wrap_output = true
+vim.g.molten_output_show_more = true

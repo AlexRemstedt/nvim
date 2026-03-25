@@ -48,10 +48,17 @@ return {
       {
         "<leader>mo",
         function()
-          vim.cmd("noautocmd MoltenShowOutput")
+          vim.cmd("noautocmd MoltenEnterOutput")
         end,
         desc = "Show Output",
       },
+    },
+  },
+  {
+    "quarto-dev/quarto-nvim",
+    dependencies = {
+      "jmbuhr/otter.nvim",
+      "nvim-treesitter/nvim-treesitter",
     },
   },
   {
@@ -64,6 +71,12 @@ return {
   },
   {
     "GCBallesteros/jupytext.nvim",
-    config = true,
+    config = function()
+      require("jupytext").setup({
+        style = "markdown",
+        output_extension = "md",
+        force_ft = "markdown",
+      })
+    end,
   },
 }
