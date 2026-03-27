@@ -5,6 +5,7 @@ vim.g.snacks_animate = false
 vim.opt.showtabline = 0
 vim.opt.splitkeep = "cursor"
 vim.opt.wrap = true
+vim.opt.exrc = true
 
 -- Molten Nvim options
 vim.g.python3_host_prog = vim.fn.expand("~/.local/share/virtualenvs/neovim/bin/python3")
