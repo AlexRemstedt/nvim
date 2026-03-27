@@ -4,6 +4,7 @@
 return {
   {
     "benlubas/molten-nvim",
+    lazy = true,
     build = ":UpdateRemotePlugins",
     init = function()
       vim.g.molten_output_win_max_height = 20
