@@ -5,6 +5,7 @@ vim.keymap.del("n", "j")
 vim.keymap.del("n", "k")
 
 vim.keymap.set("n", "<leader>gc", "<cmd>Git commit -v<cr>", { desc = "Git Commit" })
+vim.keymap.set("n", "<leader>ga", "<cmd>Git commit --amend<cr>", { desc = "Git amend" })
 if vim.fn.executable("lazygit") == 1 then
   vim.keymap.set("n", "<leader>GG", function()
     Snacks.lazygit()
