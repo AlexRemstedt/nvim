@@ -57,17 +57,10 @@ return {
   },
   {
     "quarto-dev/quarto-nvim",
+    lazy = true,
     dependencies = {
       "jmbuhr/otter.nvim",
       "nvim-treesitter/nvim-treesitter",
-    },
-  },
-  {
-    "folke/which-key.nvim",
-    opts = {
-      spec = {
-        { "<leader>m", group = "Molten" },
-      },
     },
   },
   {
