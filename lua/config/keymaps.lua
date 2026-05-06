@@ -10,6 +10,9 @@ vim.keymap.set("n", "<M-j>", "<cmd>silent !tmux neww tmux-sessionizer -s 1<CR>")
 vim.keymap.set("n", "<M-k>", "<cmd>silent !tmux neww tmux-sessionizer -s 2<CR>")
 vim.keymap.set("n", "<M-l>", "<cmd>silent !tmux neww tmux-sessionizer -s 3<CR>")
 
+vim.keymap.del("n", "H")
+vim.keymap.del("n", "L")
+
 vim.keymap.set("n", "<leader>gc", "<cmd>Git commit -v<cr>", { desc = "Git Commit" })
 vim.keymap.set("n", "<leader>ga", "<cmd>Git commit --amend<cr>", { desc = "Git Amend" })
 if vim.fn.executable("lazygit") == 1 then
