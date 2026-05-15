@@ -8,6 +8,14 @@ return {
       lspFeatures = {
         enabled = true,
         chunks = "curly",
+        languages = { "python", "html" },
+        diagnostics = {
+          enabled = true,
+          triggers = { "BufWritePost" },
+        },
+        completion = {
+          enabled = true,
+        },
       },
       codeRunner = {
         enabled = true,

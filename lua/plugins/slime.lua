@@ -1,6 +1,7 @@
 -- lua/plugins/slime.lua
 return {
   "jpalardy/vim-slime",
+  lazy = false,
   init = function()
     vim.g.slime_target = "tmux"
     vim.g.slime_default_config = {
