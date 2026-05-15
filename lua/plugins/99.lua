@@ -1,21 +1,26 @@
 return {
   "ThePrimeagen/99",
-  commit = "4f149c618333b4e7238ba4ce55b62d391a10f13b",
   keys = {
+    {
+      "<leader>9",
+      "",
+      mode = { "n", "v" },
+      desc = "99",
+    },
     {
       "<leader>9v",
       function()
-        require("99").visual()
+        require("99").visual({})
       end,
       mode = "v",
-      desc = "99: visual selection",
+      desc = "99 visual selection",
     },
     {
       "<leader>9o",
       function()
         require("99").open()
       end,
-      desc = "99: Open",
+      desc = "99 Open",
     },
     {
       "<leader>9x",
@@ -23,15 +28,15 @@ return {
         require("99").stop_all_requests()
       end,
       mode = "n",
-      desc = "99: stop all requests",
+      desc = "99 stop all requests",
     },
     {
       "<leader>9s",
       function()
-        require("99").search()
+        require("99").search({})
       end,
       mode = "n",
-      desc = "99: search",
+      desc = "99 search",
     },
     {
       "<leader>9w",
@@ -39,7 +44,7 @@ return {
         require("99").Extensions.Worker.set_work()
       end,
       mode = "n",
-      desc = "99: set work item",
+      desc = "99 set work item",
     },
     {
       "<leader>9W",
@@ -50,12 +55,28 @@ return {
       desc = "99: worker search",
     },
     {
-      "<leader>9V",
+      "<leader>9t",
       function()
-        require("99").Extensions.Worker.vibe()
+        require("99").tutorial({})
       end,
       mode = "n",
-      desc = "99: worker vibe",
+      desc = "99 tutorial",
+    },
+    {
+      "<leader>9l",
+      function()
+        require("99").view_logs()
+      end,
+      mode = "n",
+      desc = "99 view logs",
+    },
+    {
+      "<leader>9V",
+      function()
+        require("99").vibe()
+      end,
+      mode = "n",
+      desc = "99 worker vibe",
     },
   },
   config = function()
