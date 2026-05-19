@@ -52,7 +52,7 @@ return {
         require("99").Extensions.Worker.search()
       end,
       mode = "n",
-      desc = "99: worker search",
+      desc = "99 worker search",
     },
     {
       "<leader>9t",

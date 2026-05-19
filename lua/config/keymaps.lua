@@ -15,6 +15,10 @@ vim.keymap.del("n", "L")
 
 vim.keymap.set("n", "<leader>gc", "<cmd>Git commit -v<cr>", { desc = "Git Commit" })
 vim.keymap.set("n", "<leader>ga", "<cmd>Git commit --amend<cr>", { desc = "Git Amend" })
+vim.keymap.set("n", "<leader>ut", function()
+  require("util.transparent").toggle()
+end, { desc = "Toggle transparent background" })
+
 if vim.fn.executable("lazygit") == 1 then
   vim.keymap.set("n", "<leader>GG", function()
     Snacks.lazygit()
