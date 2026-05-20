@@ -7,3 +7,11 @@ vim.opt.splitkeep = "cursor"
 vim.opt.wrap = true
 vim.opt.exrc = true
 vim.opt.mouse = ""
+
+-- LSP server to use for python
+vim.g.lazyvim_python_lsp = "ty"
+
+vim.diagnostic.config({
+  float = { source = true },
+})
+
