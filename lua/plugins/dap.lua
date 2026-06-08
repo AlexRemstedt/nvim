@@ -2,6 +2,17 @@
 return {
   {
     "mfussenegger/nvim-dap",
+    keys = {
+      {
+        "n",
+        "<leader>dr",
+        function()
+          vim.cmd("topleft vsplit")
+          require("dap.repl").open()
+        end,
+        desc = "Open DAP REPL (left)",
+      },
+    },
     opts = function()
       local dap = require("dap")
 
