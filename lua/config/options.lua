@@ -14,4 +14,3 @@ vim.g.lazyvim_python_lsp = "ty"
 vim.diagnostic.config({
   float = { source = true },
 })
-

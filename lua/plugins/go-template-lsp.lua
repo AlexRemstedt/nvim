@@ -1,7 +1,10 @@
 return {
   {
     "alexremstedt/go-template-lsp.nvim",
-    dependencies = { "neovim/nvim-lspconfig" },
+    dependencies = {
+      "neovim/nvim-lspconfig",
+      "williamboman/mason.nvim",
+    },
     ft = "gotmpl",
     opts = {},
   },
