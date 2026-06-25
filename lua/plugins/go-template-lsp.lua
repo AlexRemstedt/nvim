@@ -1,21 +1,9 @@
 return {
   {
-    "neovim/nvim-lspconfig",
-    opts = function(_, opts)
-      local configs = require("lspconfig.configs")
-      if not configs.go_template_lsp then
-        configs.go_template_lsp = {
-          default_config = {
-            cmd = { "go-template-lsp" },
-            filetypes = { "gotmpl" },
-            root_dir = require("lspconfig.util").root_pattern("go.mod", ".git"),
-            settings = {},
-          },
-        }
-      end
-      opts.servers = opts.servers or {}
-      opts.servers.go_template_lsp = {}
-    end,
+    "alexremstedt/go-template-lsp.nvim",
+    dependencies = { "neovim/nvim-lspconfig" },
+    ft = "gotmpl",
+    opts = {},
   },
 
   {
