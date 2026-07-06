@@ -6,7 +6,7 @@ vim.opt.showtabline = 0
 vim.opt.splitkeep = "cursor"
 vim.opt.wrap = true
 vim.opt.exrc = true
-vim.opt.mouse = ""
+vim.opt.mouse = vim.env.MOUSE == "0" and "" or "a"
 
 -- LSP server to use for python
 vim.g.lazyvim_python_lsp = "ty"
