@@ -2,6 +2,15 @@
 return {
   {
     "mfussenegger/nvim-dap",
+    keys = {
+      {
+        "<leader>dF",
+        function()
+          require("util.dap_config").create_fastapi()
+        end,
+        desc = "Create FastAPI DAP config",
+      },
+    },
     opts = function()
       local dap = require("dap")
 
