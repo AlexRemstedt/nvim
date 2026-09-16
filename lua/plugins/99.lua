@@ -99,7 +99,7 @@ return {
       -- and generation will fail refer to tool documentation to resolve
       -- https://opencode.ai/docs/permissions/#external-directories
       -- https://code.claude.com/docs/en/permissions#read-and-edit
-      tmp_dir = "./tmp",
+      tmp_dir = "./.tmp",
 
       --- Completions: #rules and @files in the prompt buffer
       completion = {
