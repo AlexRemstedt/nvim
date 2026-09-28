@@ -31,6 +31,10 @@ return {
     end,
   },
   {
+    "mason-org/mason.nvim",
+    opts = { ensure_installed = { "debugpy" } },
+  },
+  {
     "rcarriga/nvim-dap-ui",
     enabled = false,
   },
