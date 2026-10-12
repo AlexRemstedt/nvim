@@ -104,10 +104,4 @@ return {
     "mason-org/mason.nvim",
     opts = { ensure_installed = { "debugpy" } },
   },
-
-  -- The dap-ui window layout is not used.
-  {
-    "rcarriga/nvim-dap-ui",
-    enabled = false,
-  },
 }
