@@ -50,6 +50,16 @@ return {
       "nvim-lua/plenary.nvim",
       -- Virtual text for the debugger.
       { "theHamsta/nvim-dap-virtual-text", opts = {} },
+      -- Minimal debugger view. It opens when a session starts and
+      -- closes when the session ends.
+      {
+        "igorlfs/nvim-dap-view",
+        version = "1.*",
+        opts = { auto_toggle = true },
+        keys = {
+          { "<leader>du", function() require("dap-view").toggle() end, desc = "Toggle DAP View" },
+        },
+      },
     },
 
     -- stylua: ignore
