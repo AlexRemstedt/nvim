@@ -14,3 +14,6 @@ vim.g.lazyvim_python_lsp = "ty"
 vim.diagnostic.config({
   float = { source = true },
 })
+
+-- Show the default Neovim intro screen. LazyVim hides it with the "I" flag.
+vim.opt.shortmess:remove("I")
