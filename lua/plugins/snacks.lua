@@ -2,6 +2,7 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    dashboard = { enabled = false },
     picker = {
       transform = function(item)
         local path = item.file or item.text or ""
