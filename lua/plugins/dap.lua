@@ -55,9 +55,15 @@ return {
       {
         "igorlfs/nvim-dap-view",
         version = "1.*",
-        opts = { auto_toggle = true },
+        opts = { auto_toggle = false },
         keys = {
-          { "<leader>du", function() require("dap-view").toggle() end, desc = "Toggle DAP View" },
+          {
+            "<leader>du",
+            function()
+              require("dap-view").toggle()
+            end,
+            desc = "Toggle DAP View",
+          },
         },
       },
     },
