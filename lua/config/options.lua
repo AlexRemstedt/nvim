@@ -3,7 +3,8 @@
 -- Add any additional options here
 vim.g.snacks_animate = false
 vim.opt.showtabline = 0
-vim.opt.splitkeep = "cursor"
+vim.opt.sidescrolloff = 1
+vim.opt.splitkeep = "topline"
 vim.opt.wrap = true
 vim.opt.exrc = true
 vim.opt.mouse = vim.env.MOUSE == "0" and "" or "a"

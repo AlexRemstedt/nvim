@@ -4,6 +4,14 @@
 vim.keymap.del("n", "j")
 vim.keymap.del("n", "k")
 
+vim.keymap.set("v", "<leader>cf", function()
+  local width = vim.o.textwidth > 0 and vim.o.textwidth or 80
+  vim.cmd(string.format("'<,'>!fmt -w %d", width))
+end, { desc = "Format code" })
+
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<M-h>", "<cmd>silent !tmux neww tmux-sessionizer -s 0<CR>")
 vim.keymap.set("n", "<M-j>", "<cmd>silent !tmux neww tmux-sessionizer -s 1<CR>")
